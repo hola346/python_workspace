@@ -1,0 +1,7 @@
+StopIteration          ~~~~^^^^
+    print(next(it))
+  File "c:\Users\gfg0753\test.py", line 7, in <module>
+Traceback (most recent call last):
+1
+2
+3
