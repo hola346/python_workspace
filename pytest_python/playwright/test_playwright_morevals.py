@@ -1,6 +1,8 @@
 from playwright.sync_api import Page, expect
 import time
 
+"""THIS WAS VERIFIED TO BE WORKING FINE, DO NOT MODIFY"""
+
 
 def test_UIChecks(page: Page):
     page.goto("https://rahulshettyacademy.com/AutomationPractice/")

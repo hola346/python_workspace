@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "_id": "69c3d047f86ba51a6528350e",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3cff7f86ba51a65283333",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3cfd1f86ba51a652832a3",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3ce3ff86ba51a65282d26",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3cdbff86ba51a65282b93",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3cd88f86ba51a65282b01",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        },
+        {
+            "_id": "69c3ccd2f86ba51a652827dd",
+            "orderById": "69c26210f86ba51a65224043",
+            "orderBy": "x2xx@ii.com",
+            "productOrderedId": "Wed Mar 25",
+            "productName": "ADIDAS ORIGINAL",
+            "country": "Germany",
+            "productDescription": "Apple phone",
+            "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1767959265156.jpg",
+            "orderDate": null,
+            "orderPrice": "11500",
+            "__v": 0
+        }
+    ],
+    "count": 7,
+    "message": "Orders fetched for customer Successfully"
+}

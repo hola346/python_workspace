@@ -3,6 +3,8 @@ from playwright.sync_api import Page, expect
 import time
 import re
 
+"""THIS WAS VERIFIED TO BE WORKING FINE, DO NOT MODIFY"""
+
 
 def test_coreLocators(page: Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/")

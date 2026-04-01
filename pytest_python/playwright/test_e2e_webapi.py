@@ -1,7 +1,10 @@
-from playwright.async_api import Playwright, Page, expect
-from test_createUser import test_login
+from playwright.sync_api import Playwright, Page, expect
+from test_createUser_withJSONf import test_login
 import time
 from data.class_apiBase import APIUtils
+
+"""THIS WAS VERIFIED TO BE WORKING FINE, DO NOT MODIFY
+NOTICE user selected for LOGIN and then for ORDER, SHOULD BE SAME ONE"""
 
 
 def test_remoteLogin(page: Page):
@@ -27,7 +30,7 @@ def test_e2e_webapi(playwright: Playwright):
     orderNum = orderNum.replace("[", "")
     orderNum = orderNum.replace("]", "")
 
-    print(orderNum)
+    print("This is the final order to be found", orderNum)
 
     """    row = page.locator("tr").filter(
         has_text="Rice"

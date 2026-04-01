@@ -12,10 +12,15 @@ class APIUtils:
         )
         response = api_request_context.post(
             "/api/ecom/auth/login",
-            data={"userEmail": "x2xx@ii.com", "userPassword": "Aa/12345678"},
+            data={
+                "userEmail": "adf7777777777@dwer.com",
+                "userPassword": "Bb/dffg3412345678",
+            },
             # headers={"Content_Type": "application/json"},
         )
-
+        print(
+            "THIS IS THE hardcored USER i'M USING: userEmail: adf7777777777@dwer.com, userPassword: Bb/dffg3412345678"
+        )
         assert response.ok
         print(response.json())
         a = response.json()
