@@ -35,7 +35,9 @@ class APIUtils:
         )
         # same thing as browser before, but this is API: define context, now define METHOD: get, post...
 
-        with open("data/order.json") as f3:
+        with open(
+            "C:\\python\\python_workspace\\pytest_python\\playwright\\data\\order.json"
+        ) as f3:
             orders = json.load(f3)
 
         response = api_request_context.post(

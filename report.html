@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 01-Apr-2026 at 17:52:33 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">52 tests took 00:06:08.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">3 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">49 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" >
+            <span class="skipped">1 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.14.2&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;base-url&#34;: &#34;2.1.0&#34;, &#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;playwright&#34;: &#34;0.7.2&#34;, &#34;xdist&#34;: &#34;3.8.0&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Program Files\\Java\\jdk-17&#34;, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;pytest_python/playwright/test_createUser_withJSONf.py::test_newUser[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf.py::test_newUser[chromium]&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf.py::test_newUser[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials0]&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMyNjIxMGY4NmJhNTFhNjUyMjQwNDMiLCJ1c2VyRW1haWwiOiJ4Mnh4QGlpLmNvbSIsInVzZXJNb2JpbGUiOjYyNTg2NjU2OTgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NzUwNTgxNzUsImV4cCI6MTgwNjYxNTc3NX0.2QqHWaYEuK343vXok57mAmalO49kd5nRFJ5_0kc47K0&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c26210f86ba51a65224043&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMyNjIxMGY4NmJhNTFhNjUyMjQwNDMiLCJ1c2VyRW1haWwiOiJ4Mnh4QGlpLmNvbSIsInVzZXJNb2JpbGUiOjYyNTg2NjU2OTgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NzUwNTgxNzUsImV4cCI6MTgwNjYxNTc3NX0.2QqHWaYEuK343vXok57mAmalO49kd5nRFJ5_0kc47K0\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3cfff86ba51a653e4768&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nprinting order number???? 69cd3cfff86ba51a653e4768\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf.py::test_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf.py::test_login[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf.py::test_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials1]&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzA4OWY4NmJhNTFhNjUyYmVkZWYiLCJ1c2VyRW1haWwiOiJhZGYyMjIyMjIzQGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODE5MCwiZXhwIjoxODA2NjE1NzkwfQ.mjOBoevVgbPs1D0lZa_tRP_-_68GTKagJyC_icoKx4Q&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c53089f86ba51a652bedef&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzA4OWY4NmJhNTFhNjUyYmVkZWYiLCJ1c2VyRW1haWwiOiJhZGYyMjIyMjIzQGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODE5MCwiZXhwIjoxODA2NjE1NzkwfQ.mjOBoevVgbPs1D0lZa_tRP_-_68GTKagJyC_icoKx4Q\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3d0ef86ba51a653e478e&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nprinting order number???? 69cd3d0ef86ba51a653e478e\n&#34;}], &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials2]&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials2]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODIwNSwiZXhwIjoxODA2NjE1ODA1fQ.48kAFbuTVohs9Mi6iGjPksilgCqVqg-R6qynwRwP_kw&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539a8f86ba51a652c09f2&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODIwNSwiZXhwIjoxODA2NjE1ODA1fQ.48kAFbuTVohs9Mi6iGjPksilgCqVqg-R6qynwRwP_kw\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3d1df86ba51a653e480c&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nprinting order number???? 69cd3d1df86ba51a653e480c\n&#34;}], &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials3]&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/TCs_with_classes_PageObject/test_e2e_webapi_PageObject.py::test_e2e_webapi[user_credentials3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhZmY4NmJhNTFhNjUyYzA5ZmIiLCJ1c2VyRW1haWwiOiJ3cnM4ODg4ODg4ODhAZHdlcmV3cndlci5jb20iLCJ1c2VyTW9iaWxlIjo2MjU4NjY1MTIzLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzc1MDU4MjIxLCJleHAiOjE4MDY2MTU4MjF9.Vt5hP6W5ACGPrqSfcayq0x-DAh33fVCoCcytOkHatI4&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539aff86ba51a652c09fb&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhZmY4NmJhNTFhNjUyYzA5ZmIiLCJ1c2VyRW1haWwiOiJ3cnM4ODg4ODg4ODhAZHdlcmV3cndlci5jb20iLCJ1c2VyTW9iaWxlIjo2MjU4NjY1MTIzLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzc1MDU4MjIxLCJleHAiOjE4MDY2MTU4MjF9.Vt5hP6W5ACGPrqSfcayq0x-DAh33fVCoCcytOkHatI4\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3d2df86ba51a653e4875&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nprinting order number???? 69cd3d2df86ba51a653e4875\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf.py::test_order[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf.py::test_order[chromium]&#34;, &#34;duration&#34;: &#34;00:00:44&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf.py::test_order[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:44&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\npage = &amp;lt;Page url=&amp;#x27;https://rahulshettyacademy.com/client/#/dashboard/cart&amp;#x27;&amp;gt;\n\n    def test_order(page: Page):\n        test_login(page)\n        expect(page.get_by_text(&amp;quot;ADIDAS ORIGINAL&amp;quot;)).to_be_visible()\n        expect(page.get_by_text(&amp;quot;ZARA COAT 3&amp;quot;)).to_be_visible()\n        expect(page.get_by_text(&amp;quot;iphone 13 pro&amp;quot;)).to_be_visible()\n    \n        product = page.locator(&amp;quot;.card&amp;quot;).filter(has_text=&amp;quot;ADIDAS ORIGINAL&amp;quot;)\n        product.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;View&amp;quot;).click()\n        expect(page.get_by_text(&amp;quot;product details&amp;quot;)).to_be_visible()\n        page.locator(&amp;quot;.continue&amp;quot;).click()\n    \n        product.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Add to Cart&amp;quot;).click()\n    \n        page.locator(&amp;quot;.btn-custom&amp;quot;).filter(has_text=&amp;quot;Cart&amp;quot;).click()\n        # page.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Cart&amp;quot;).click()\n&amp;gt;       page.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Buy&amp;quot;).click()\n\npytest_python\\playwright\\test_createUser_withJSONf.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nvenv\\Lib\\site-packages\\playwright\\sync_api\\_generated.py:15631: in click\n    self._sync(\nvenv\\Lib\\site-packages\\playwright\\_impl\\_locator.py:162: in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nvenv\\Lib\\site-packages\\playwright\\_impl\\_frame.py:566: in _click\n    await self._channel.send(&amp;quot;click&amp;quot;, self._timeout, locals_to_params(locals()))\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000002238588A0D0&amp;gt;, cb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x00000223859BF270&amp;gt;, is_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.\nE           Call log:\nE             - waiting for get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Buy&amp;quot;)\n\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:559: TimeoutError\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_anotherMock.py::test_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_anotherMock.py::test_login[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_anotherMock.py::test_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData0]&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials0]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nx2xx@ii.com\nAa/12345678\n&#34;}], &#34;pytest_python/playwright/test_anotherMock.py::test_network2[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_anotherMock.py::test_network2[chromium]&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_anotherMock.py::test_network2[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\nYou are not authorize to view this order\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials0]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nx2xx@ii.com\nAa/12345678\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi.py::test_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi.py::test_login[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi.py::test_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_playwright_basis.py::test_coreLocators[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_basis.py::test_coreLocators[chromium]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_basis.py::test_coreLocators[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi.py::test_remoteLogin[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi.py::test_remoteLogin[chromium]&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi.py::test_remoteLogin[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_playwright_basis.py::test_coreLocatorsIncorrectLogin[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_basis.py::test_coreLocatorsIncorrectLogin[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_basis.py::test_coreLocatorsIncorrectLogin[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials0]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nx2xx@ii.com\nAa/12345678\n&#34;}], &#34;pytest_python/playwright/test_playwright_login_newpage.py::test_coreLocators[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_login_newpage.py::test_coreLocators[chromium]&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_login_newpage.py::test_coreLocators[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_login[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_playwright_login_newpage.py::test_childpage[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_login_newpage.py::test_childpage[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_login_newpage.py::test_childpage[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nPlease email us at mentor@rahulshettyacademy.com with below template to receive response \n[&amp;#x27;mentor@rahulshettyacademy.com&amp;#x27;]\n[&amp;#x27;Please email us &amp;#x27;, &amp;#x27;mentor@rahulshettyacademy.com with below template to receive response &amp;#x27;]\nmentor@rahulshettyacademy.com\n&#34;}], &#34;pytest_python/playwright/test_mockdata.py::test_login[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_mockdata.py::test_login[chromium]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_mockdata.py::test_login[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_playwright_morevals.py::test_UIChecks[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_morevals.py::test_UIChecks[chromium]&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_morevals.py::test_UIChecks[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_playwright_morevals.py::test_AlertBoxes[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_morevals.py::test_AlertBoxes[chromium]&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_morevals.py::test_AlertBoxes[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_mockdata.py::test_network[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_mockdata.py::test_network[chromium]&#34;, &#34;duration&#34;: &#34;00:00:20&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_mockdata.py::test_network[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\nthis is text void expected:  You have No Orders to show at this time. Please Visit Back Us \n&#34;}], &#34;pytest_python/playwright/test_playwright_morevals.py::test_frames[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_morevals.py::test_frames[chromium]&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_morevals.py::test_frames[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_orderWeb.py::test_order[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_orderWeb.py::test_order[chromium]&#34;, &#34;duration&#34;: &#34;00:00:21&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_orderWeb.py::test_order[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:21&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\nIS SEQUENTIALLY WORKIN??\nthis is the end of the ORDERRRRRRR\n&#34;}], &#34;pytest_python/playwright/test_playwright_morevals.py::test_HoverButtons[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_morevals.py::test_HoverButtons[chromium]&#34;, &#34;duration&#34;: &#34;00:00:21&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_morevals.py::test_HoverButtons[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:21&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_tokensession.py::test_session_storage[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_tokensession.py::test_session_storage[chromium]&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_tokensession.py::test_session_storage[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nTHIS IS THE hardcored USER i&amp;#x27;M USING: userEmail: adf7777777777@dwer.com, userPassword: Bb/dffg3412345678\n{&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODM1OSwiZXhwIjoxODA2NjE1OTU5fQ.FURxlR5ymG9TnLsVRC2ZKhQjLHFsrS0do3AkBEh9NOI&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539a8f86ba51a652c09f2&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODM1OSwiZXhwIjoxODA2NjE1OTU5fQ.FURxlR5ymG9TnLsVRC2ZKhQjLHFsrS0do3AkBEh9NOI\nthis is recovered token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODM1OSwiZXhwIjoxODA2NjE1OTU5fQ.FURxlR5ymG9TnLsVRC2ZKhQjLHFsrS0do3AkBEh9NOI\n&#34;}], &#34;pytest_python/playwright/test_webtables.py::test_ricePrice[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_webtables.py::test_ricePrice[chromium]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_webtables.py::test_ricePrice[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\n3\nNumber of Price found:  0\nNumber of Price found:  1\nIndex of Price column:  1\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData1]&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_newUser[chromium-newUserData1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_orderWeb.py::test_orderWeb[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_orderWeb.py::test_orderWeb[chromium]&#34;, &#34;duration&#34;: &#34;00:00:43&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_orderWeb.py::test_orderWeb[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:43&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\npage = &amp;lt;Page url=&amp;#x27;https://rahulshettyacademy.com/client/#/dashboard/cart&amp;#x27;&amp;gt;\n\n    def test_orderWeb(page: Page):\n        # test_login(page) # we are using user [2] from credentials.json - 77777\n&amp;gt;       test_order(page)\n\npytest_python\\playwright\\test_orderWeb.py:10: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npytest_python\\playwright\\test_createUser_withJSONf.py:72: in test_order\n    page.get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Buy&amp;quot;).click()\nvenv\\Lib\\site-packages\\playwright\\sync_api\\_generated.py:15631: in click\n    self._sync(\nvenv\\Lib\\site-packages\\playwright\\_impl\\_locator.py:162: in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nvenv\\Lib\\site-packages\\playwright\\_impl\\_frame.py:566: in _click\n    await self._channel.send(&amp;quot;click&amp;quot;, self._timeout, locals_to_params(locals()))\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000002554C480050&amp;gt;, cb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000002554CD1BB60&amp;gt;, is_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.\nE           Call log:\nE             - waiting for get_by_role(&amp;quot;button&amp;quot;, name=&amp;quot;Buy&amp;quot;)\n\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:559: TimeoutError\n\n----------------------------- Captured stdout call -----------------------------\nNOTICE: we are printing user [2], adf7777777777@dwer.com\n&#34;}], &#34;pytest_python/playwright/test_playwright_basis.py::test_playwrightShortcut[chromium]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_basis.py::test_playwrightShortcut[chromium]&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_basis.py::test_playwrightShortcut[chromium]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials1]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf2222223@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials2]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials2]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf7777777777@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials3]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nwrs888888888@dwerewrwer.com\nCCCCacc/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials1]&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf2222223@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials1]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf2222223@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials3]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nwrs888888888@dwerewrwer.com\nCCCCacc/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials2]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_login[chromium-user_credentials2]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf7777777777@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials3]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_login[chromium-user_credentials3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nwrs888888888@dwerewrwer.com\nCCCCacc/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials2]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_createUser_withJSONf_PARAM.py::test_order[chromium-user_credentials2]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nadf7777777777@dwer.com\nBb/dffg3412345678\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi.py::test_e2e_webapi&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi.py::test_e2e_webapi&#34;, &#34;duration&#34;: &#34;00:00:19&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi.py::test_e2e_webapi&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:19&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nTHIS IS THE hardcored USER i&amp;#x27;M USING: userEmail: adf7777777777@dwer.com, userPassword: Bb/dffg3412345678\n{&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQyNCwiZXhwIjoxODA2NjE2MDI0fQ.un4HZfHiMekma_sjzohj5VefbdyIFt4vC_R1FPE5BSg&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539a8f86ba51a652c09f2&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQyNCwiZXhwIjoxODA2NjE2MDI0fQ.un4HZfHiMekma_sjzohj5VefbdyIFt4vC_R1FPE5BSg\n{&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3df8f86ba51a653e4ba0&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nNOTICE: we are printing user [2], adf7777777777@dwer.com\nThis is the final order to be found 69cd3df8f86ba51a653e4ba0\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials0]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials0]&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials0]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMyNjIxMGY4NmJhNTFhNjUyMjQwNDMiLCJ1c2VyRW1haWwiOiJ4Mnh4QGlpLmNvbSIsInVzZXJNb2JpbGUiOjYyNTg2NjU2OTgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NzUwNTg0MzEsImV4cCI6MTgwNjYxNjAzMX0.O87QFdE07cJRRx3sreP-YO73x0c2CDL6TVhT2DiDmNY&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c26210f86ba51a65224043&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMyNjIxMGY4NmJhNTFhNjUyMjQwNDMiLCJ1c2VyRW1haWwiOiJ4Mnh4QGlpLmNvbSIsInVzZXJNb2JpbGUiOjYyNTg2NjU2OTgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NzUwNTg0MzEsImV4cCI6MTgwNjYxNjAzMX0.O87QFdE07cJRRx3sreP-YO73x0c2CDL6TVhT2DiDmNY\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3dfff86ba51a653e4bd0&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nx2xx@ii.com\nAa/12345678\nprinting order number???? 69cd3dfff86ba51a653e4bd0\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials1]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials1]&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials1]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzA4OWY4NmJhNTFhNjUyYmVkZWYiLCJ1c2VyRW1haWwiOiJhZGYyMjIyMjIzQGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQ0MywiZXhwIjoxODA2NjE2MDQzfQ.7JW72Tz2-4DiE-l-0tli05I3pBGwa15bxKZAV7_y0aw&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c53089f86ba51a652bedef&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzA4OWY4NmJhNTFhNjUyYmVkZWYiLCJ1c2VyRW1haWwiOiJhZGYyMjIyMjIzQGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQ0MywiZXhwIjoxODA2NjE2MDQzfQ.7JW72Tz2-4DiE-l-0tli05I3pBGwa15bxKZAV7_y0aw\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3e0bf86ba51a653e4c04&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nadf2222223@dwer.com\nBb/dffg3412345678\nprinting order number???? 69cd3e0bf86ba51a653e4c04\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials2]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials2]&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials2]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQ0OSwiZXhwIjoxODA2NjE2MDQ5fQ.ZjivjrhJwIrOxx4APp7o7623MQfNeKfNJkmjrNawrCQ&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539a8f86ba51a652c09f2&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQ0OSwiZXhwIjoxODA2NjE2MDQ5fQ.ZjivjrhJwIrOxx4APp7o7623MQfNeKfNJkmjrNawrCQ\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3e11f86ba51a653e4c3a&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nadf7777777777@dwer.com\nBb/dffg3412345678\nprinting order number???? 69cd3e11f86ba51a653e4c3a\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials3]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials3]&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_API_PARAMS.py::test_e2e_webapi[user_credentials3]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is value of response.json:  {&amp;#x27;token&amp;#x27;: &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhZmY4NmJhNTFhNjUyYzA5ZmIiLCJ1c2VyRW1haWwiOiJ3cnM4ODg4ODg4ODhAZHdlcmV3cndlci5jb20iLCJ1c2VyTW9iaWxlIjo2MjU4NjY1MTIzLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzc1MDU4NDYwLCJleHAiOjE4MDY2MTYwNjB9.gnli-1QPC9wP7OUm7TrAdrkYW0cFZhJuMlU4EIH8t1Q&amp;#x27;, &amp;#x27;userId&amp;#x27;: &amp;#x27;69c539aff86ba51a652c09fb&amp;#x27;, &amp;#x27;message&amp;#x27;: &amp;#x27;Login Successfully&amp;#x27;}\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhZmY4NmJhNTFhNjUyYzA5ZmIiLCJ1c2VyRW1haWwiOiJ3cnM4ODg4ODg4ODhAZHdlcmV3cndlci5jb20iLCJ1c2VyTW9iaWxlIjo2MjU4NjY1MTIzLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzc1MDU4NDYwLCJleHAiOjE4MDY2MTYwNjB9.gnli-1QPC9wP7OUm7TrAdrkYW0cFZhJuMlU4EIH8t1Q\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3e1cf86ba51a653e4c67&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nwrs888888888@dwerewrwer.com\nCCCCacc/dffg3412345678\nprinting order number???? 69cd3e1cf86ba51a653e4c67\n&#34;}], &#34;pytest_python/playwright/test_playwright_basis.py::test_playwrightBasics&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_basis.py::test_playwrightBasics&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_basis.py::test_playwrightBasics&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n&#34;}], &#34;pytest_python/test_PytestValidation.py::test_initialCheck&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/test_PytestValidation.py::test_initialCheck&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/test_PytestValidation.py::test_initialCheck&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nThis is prework instance module\nThis is second instance function\n\n----------------------------- Captured stdout call -----------------------------\nthis is first test\n--------------------------- Captured stdout teardown ---------------------------\ntear down validation\n&#34;}], &#34;pytest_python/test_PytestValidation.py::test_secondCheck&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Skipped&#34;, &#34;testId&#34;: &#34;pytest_python/test_PytestValidation.py::test_secondCheck::setup&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Skipped&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/test_PytestValidation.py::test_secondCheck::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n(&amp;#x27;C:\\\\python\\\\python_workspace\\\\pytest_python\\\\test_PytestValidation.py&amp;#x27;, 62, &amp;#x27;Skipped: unconditional skip&amp;#x27;)\n&#34;}], &#34;pytest_python/test_PytestValidation2.py::test_ThirdCheck&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/test_PytestValidation2.py::test_ThirdCheck&#34;, &#34;duration&#34;: &#34;8 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/test_PytestValidation2.py::test_ThirdCheck&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;8 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n---------------------------- Captured stdout setup -----------------------------\nSetting up browser\n\n----------------------------- Captured stdout call -----------------------------\nthis is 3rd test\n&#34;}], &#34;pytest_python/test_PytestValidation2.py::test_fourthCheck&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/test_PytestValidation2.py::test_fourthCheck&#34;, &#34;duration&#34;: &#34;894 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/test_PytestValidation2.py::test_fourthCheck&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;894 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nthis is 4th test\n&#34;}], &#34;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_e2e_webapi&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_e2e_webapi&#34;, &#34;duration&#34;: &#34;00:00:21&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_e2e_webapi_best_pract_withJSON.py::test_e2e_webapi&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:21&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\n----------------------------- Captured stdout call -----------------------------\nThis is the value of the token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWM1MzlhOGY4NmJhNTFhNjUyYzA5ZjIiLCJ1c2VyRW1haWwiOiJhZGY3Nzc3Nzc3Nzc3QGR3ZXIuY29tIiwidXNlck1vYmlsZSI6NjI1ODY2NTEyMywidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3NTA1ODQ2NiwiZXhwIjoxODA2NjE2MDY2fQ.Xt7cr4U3qw_qK58yRIqmp1cbn1q6If_jkxBNczt8rj4\nThis is the value in e2e_webapi of response_order_OK:  {&amp;#x27;orders&amp;#x27;: [&amp;#x27;69cd3e23f86ba51a653e4c7d&amp;#x27;], &amp;#x27;productOrderId&amp;#x27;: [&amp;#x27;6960eac0c941646b7a8b3e68&amp;#x27;], &amp;#x27;message&amp;#x27;: &amp;#x27;Order Placed Successfully&amp;#x27;}\nNOTICE: we are printing user [2], adf7777777777@dwer.com\nprinting order number???? 69cd3e23f86ba51a653e4c7d\n&#34;}], &#34;pytest_python/playwright/test_playwright_basis.py::test_FFLocators&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;pytest_python/playwright/test_playwright_basis.py::test_FFLocators&#34;, &#34;duration&#34;: &#34;00:00:50&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;pytest_python/playwright/test_playwright_basis.py::test_FFLocators&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:50&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.14.2 C:\\python\\python_workspace\\venv\\Scripts\\python.exe\n\nplaywright = &amp;lt;playwright._impl._playwright.Playwright object at 0x0000022385CE9950&amp;gt;\n\n    def test_FFLocators(playwright: Playwright):\n        ffbrowser = playwright.firefox.launch(headless=False)\n        # like incognito mode\n        page = ffbrowser.new_page()\n        page.goto(&amp;quot;http:\\\\www.google.com&amp;quot;)\n        page.goto(&amp;quot;https://rahulshettyacademy.com/loginpagePractise/&amp;quot;)\n        page.get_by_label(&amp;quot;Username:&amp;quot;).fill(&amp;quot;rahulshettyacademy&amp;quot;)\n    \n        page.get_by_label(&amp;quot;Password:&amp;quot;).fill(&amp;quot;Learning@830$3mK2&amp;quot;)\n        # page.get_by_role(role=&amp;quot;radio&amp;quot;, name=&amp;quot;user&amp;quot;).click()\n    \n        page.get_by_role(&amp;quot;combobox&amp;quot;).select_option(&amp;quot;teach&amp;quot;)  # value defined in the HTML\n        # label.customradio:nth-child(2)\n    \n        page.get_by_role(role=&amp;quot;link&amp;quot;, name=&amp;quot;terms and conditions&amp;quot;).click()\n&amp;gt;       page.get_by_role(role=&amp;quot;checkbox&amp;quot;, name=&amp;quot;terms&amp;quot;).click()\n\npytest_python\\playwright\\test_playwright_basis.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nvenv\\Lib\\site-packages\\playwright\\sync_api\\_generated.py:15631: in click\n    self._sync(\nvenv\\Lib\\site-packages\\playwright\\_impl\\_locator.py:162: in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nvenv\\Lib\\site-packages\\playwright\\_impl\\_frame.py:566: in _click\n    await self._channel.send(&amp;quot;click&amp;quot;, self._timeout, locals_to_params(locals()))\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000002238588A0D0&amp;gt;, cb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x0000022387B23D70&amp;gt;, is_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.\nE           Call log:\nE             - waiting for get_by_role(&amp;quot;checkbox&amp;quot;, name=&amp;quot;terms&amp;quot;)\nE               - locator resolved to &amp;lt;input id=&amp;quot;terms&amp;quot; name=&amp;quot;terms&amp;quot; type=&amp;quot;checkbox&amp;quot;/&amp;gt;\nE             - attempting click action\nE               - waiting for element to be visible, enabled and stable\nE               - element is visible, enabled and stable\nE               - scrolling into view if needed\nE               - done scrolling\nE               - performing click action\n\nvenv\\Lib\\site-packages\\playwright\\_impl\\_connection.py:559: TimeoutError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>
