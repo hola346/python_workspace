@@ -3,5 +3,7 @@
         "pytest_python"
     ],
     "python.testing.unittestEnabled": true,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "claudeCode.useTerminal": true,
+    "editor.inlineSuggest.enabled": false
 }

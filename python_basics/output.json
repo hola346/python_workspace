@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Pepe",
+        "Id": 1,
+        "age": 34
+    },
+    {
+        "name": "Juan",
+        "Id": 2,
+        "age": 19
+    },
+    {
+        "id": 56,
+        "dog": true
+    },
+    {
+        "append1": "Pepe",
+        "append2": 1,
+        "append3": 34
+    }
+]

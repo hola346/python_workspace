@@ -22,7 +22,6 @@ def arrangeOrderNum(response_order_OK):
     return orderNum
 
 
-@pytest.mark.webapi6
 @pytest.mark.parametrize("user_credentials", cred)
 def test_e2e_webapi(playwright: Playwright, browserInstance, user_credentials):
     print("This is the value in e2e_webapi of user_credentials: ", user_credentials)

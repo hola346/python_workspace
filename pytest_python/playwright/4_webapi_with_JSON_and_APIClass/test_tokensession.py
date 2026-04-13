@@ -20,7 +20,6 @@ are running a test set with many test cases.
 On web navigation, TOKEN once created is kept in LOCAL STORAGE"""
 
 
-@pytest.mark.webapi4
 def test_session_storage(playwright: Playwright, page: Page):
     api_utils = APIUtils()
     getToken = api_utils.getToken(playwright)

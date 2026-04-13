@@ -17,13 +17,11 @@ from class_apiBase import APIUtils
 NOTICE user selected for LOGIN and then for ORDER, SHOULD BE SAME ONE"""
 
 
-@pytest.mark.webapi4
 def test_remoteLogin(page: Page):
     test_login(page)
     # calling login from other file/test
 
 
-@pytest.mark.webapi4
 def test_e2e_webapi(playwright: Playwright):
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()

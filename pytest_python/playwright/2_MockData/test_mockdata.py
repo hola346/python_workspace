@@ -26,7 +26,6 @@ def intercept_response(route):
     route.fulfill(json=fakeResponse)
 
 
-@pytest.mark.mock
 def test_network(page: Page):
     test_login(page)
     # listening when selecting orders - execute event - intercept_response:

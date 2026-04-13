@@ -14,3 +14,4 @@ Feature: Order Transaction
         Examples:
             | username                    | password               |
             | wrs888888888@dwerewrwer.com | CCCCacc/dffg3412345678 |
+            | x2xx@ii.com                 | Aa/12345678            |

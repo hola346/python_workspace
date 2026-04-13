@@ -20,7 +20,6 @@ with open(
     cred = credentials["UserCredentials"]
 
 
-@pytest.mark.webapi5
 @pytest.mark.parametrize("user_credentials", cred)
 def test_e2e_webapi(playwright: Playwright, user_credentials):
     browser = playwright.chromium.launch(headless=False)

@@ -23,7 +23,6 @@ def intercept_Request(route):
     route.continue_(url="https:\\wwww.google.com")
 
 
-@pytest.mark.mock
 def test_network2(page: Page):
     test_login(page)
     # test_order(page)

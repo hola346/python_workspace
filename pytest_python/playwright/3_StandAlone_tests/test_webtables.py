@@ -4,7 +4,6 @@ import time, pytest
 """THIS WAS VERIFIED TO BE WORKING FINE, DO NOT MODIFY"""
 
 
-@pytest.mark.standalone
 def test_ricePrice(page: Page):
     page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers")
     # now page.locators do not work, but frames instead:

@@ -15,7 +15,6 @@ def secondWork():
     print("tear down validation")
 
 
-@pytest.mark.fixtur
 def test_initialCheck(preWork, secondWork):
     print("this is first test")
     assert preWork == "pass"

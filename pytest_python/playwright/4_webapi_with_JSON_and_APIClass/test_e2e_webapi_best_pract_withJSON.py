@@ -27,7 +27,6 @@ from class_apiBase_withJSONf import APIUtils
 """
 
 
-@pytest.mark.webapi4
 def test_e2e_webapi(playwright: Playwright):
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
